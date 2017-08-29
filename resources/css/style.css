@@ -1,0 +1,235 @@
+/* Palletton.com Hue: 33° Brown
+aa703a - ffe4cc - e2af80 - 764212 - 391b00
+
+Hue: 244° Blue
+304073 - a4adc7 - 5e6d98 - 142350 - 030c26
+
+Hue: 183° Green
+2c823b - acd7b3 - 62ad6f - 0e5a1b - 002b08
+ */
+
+ @font-face {
+   font-family: 'Oswald';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v14/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0150-0151, U+0170-0171;
+ }
+ @font-face {
+   font-family: 'Oswald';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Oswald Bold'), local('Oswald-Bold'), url(https://fonts.gstatic.com/s/oswald/v14/bH7276GfdCjMjApa_dkG6VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0150-0151, U+0170-0171;
+ }
+ @font-face {
+   font-family: 'Play';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Play Regular'), local('Play-Regular'), url(https://fonts.gstatic.com/s/play/v8/ZNo-5SxCwH1CXgZ-n3bt2g.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0150-0151, U+0170-0171;
+ }
+
+ @font-face {
+   font-family: 'Play';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Play Bold'), local('Play-Bold'), url(https://fonts.gstatic.com/s/play/v8/PpjZAP-K8gv39BSLNS1xY_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0150-0151, U+0170-0171;
+ }
+
+
+html {
+  font-size: 16px;
+  font-family: Oswald, sans-serif;
+  color: #391b00;
+  background-color: #ffe4cc;
+}
+
+/* Header */
+/* Logo */
+header {
+  width: 100%;
+  background-color: #764212;
+  justify-content: center;
+  display: flex;
+  color: #ffe4cc;
+  position: fixed;
+}
+
+.top {
+  width: 1200px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+}
+
+.logo img {
+  width: 2.5rem;
+  padding-right: 1rem;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top a {
+  padding: 0.5rem 1rem;
+  font-family: Play, Verdana, Arial, sans-serif;
+  color: #ffe4cc;
+  text-decoration: none;
+}
+
+.top a:hover {
+  background-color: #391b00;
+  color: e2af80;
+}
+
+/* Border-lines ;-)
+
+.border {
+  background-color: #a4adc7;
+  border-bottom: 1px solid #764212;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+*/
+
+/* Main */
+main {
+  width: 100%;
+  position: relative;
+  top: 4.7rem;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  width: 33.3%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  align-items: center;
+  background-size: cover;
+}
+
+.image-box a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  transition: all 300ms linear;
+}
+
+.image-box a:hover {
+  font-size: 2rem;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#csoda.image-box {
+  background-image: url(../images/zsak1.jpg);
+}
+
+#csoda a {
+  background-color: rgba(170, 111, 57, 0.65);
+  transition: all 300ms linear;
+}
+
+#csoda a:hover {
+  background-color: rgba(170, 111, 57, 0.2);
+}
+
+#varazs.image-box {
+  background-image: url(../images/zsak2.jpg);
+}
+
+#varazs a {
+  background-color: rgba(47, 64, 115, 0.65);
+  transition: all 300ms linear;
+}
+
+#varazs a:hover {
+  background-color: rgba(47, 64, 115, 0.2);
+}
+
+#mirakulum.image-box {
+  background-image: url(../images/zsak3.jpg);
+}
+
+#mirakulum a {
+  background-color: rgba(43, 130, 58, 0.65);
+  transition: all 300ms linear;
+}
+
+#mirakulum a:hover {
+  background-color: rgba(43, 130, 58, 0.2);
+}
+
+#hihetetlen.image-box {
+  background-image: url(../images/tartaly1.jpg);
+}
+
+#hihetetlen a {
+  background-color: rgba(16, 32, 79, 0.65);
+  transition: all 300ms linear;
+}
+
+#hihetetlen a:hover {
+  background-color: rgba(16, 32, 79, 0.2);
+}
+
+#fantasztikum.image-box {
+  background-image: url(../images/tartaly2.jpg);
+}
+
+#fantasztikum a {
+  background-color: rgba(9, 90, 23, 0.65);
+  transition: all 300ms linear;
+}
+
+#fantasztikum a:hover {
+  background-color: rgba(9, 90, 23, 0.2);
+}
+
+#sima.image-box {
+  background-image: url(../images/tartaly3.jpg);
+}
+
+#sima a {
+  background-color: rgba(117, 63, 12, 0.65);
+  transition: all 300ms linear;
+}
+
+#sima a:hover {
+  background-color: rgba(117, 63, 12, 0.2);
+}
